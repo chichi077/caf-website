@@ -1,0 +1,178 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation section */
+.nav-container {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-container nav {
+    display: flex;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-container li {
+    margin-right: 20px;
+}
+
+.nav-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main section */
+#main {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+#main h2 {
+    font-size: 32px;
+    color: brown;
+    position: absolute;
+    top: 50%; /* 調整垂直方向上的位置 */
+    left: 20%; /* 調整水平方向上的位置 */
+    transform: translate(-50%, -50%);
+}
+
+#main img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contents section */
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container .product {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container .product .product-info {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* 添加溢出隱藏，以便背景不會溢出到圖片之外 */
+}
+
+.container .product .product-info:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../assets/images/coffee\ beans2.jpg') no-repeat center center fixed; /* 圖片的路徑 */
+    background-size: cover; /* 背景圖片大小的規模 */
+    background-attachment: fixed; /* 將背景圖片固定不動 */
+    opacity: 0.7; /* 適應透明度 */
+    z-index: -1; /* 將背景圖片置於 z-index -1，以使其處於內容之後 */
+}
+
+.container .product .product-info .image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    z-index: 1; /* 將圖片置於 z-index 1，以使其處於背景之前 */
+}
+
+.container .product .product-info h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.container .product .product-info p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Footer section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-section ul {
+    list-style-type: none;
+}
+
+.footer .footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-bottom {
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-container nav {
+        margin-top: 10px;
+    }
+
+    .nav-container ul {
+        flex-direction: column;
+    }
+
+    #main h2 {
+        font-size: 24px;
+    }
+
+    .container .product .product-info {
+        width: calc(50% - 20px);
+    }
+}

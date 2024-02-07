@@ -8,7 +8,6 @@ header {
     text-align: left;
     color: white;
     overflow: hidden;
-    font-style:
 }
 
 header::before {
@@ -173,4 +172,182 @@ position:relative;
 }
 .view a{
     color:white;
+}
+
+/*Evelyn*/
+/* 修改後的 CSS 樣式 */
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Our menu section */
+.our-menu-page {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-title {
+    font-size: 28px;
+    color: #333;
+}
+
+/* Homepage column item */
+.homepage-colum-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex; /* 使用 Flexbox 進行排列 */
+}
+
+.homepage-colum-img {
+    flex: 1;
+}
+
+/* 修改圖片樣式 */
+.coffee-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.homepage-colum-detail {
+    flex: 1;
+    padding: 20px;
+}
+
+.homepage-colum-detail-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.homepage-colum-detail p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+
+/* customer page styles.css */
+
+.reviews-container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.review {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #fa643f; /* 新增邊框顏色 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* 新增陰影效果 */
+}
+
+.rating {
+    font-size: 24px;
+}
+
+.star {
+    color: gold;
+}
+
+.comment {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+/*footer styles.css*/
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #3d3d3d;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h3 {
+    color: #fa643f;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
