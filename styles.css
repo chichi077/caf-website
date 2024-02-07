@@ -1,0 +1,176 @@
+* {
+
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    text-align: left;
+    color: white;
+    overflow: hidden;
+    font-style:
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(./Cuban-coffee-cup-on-wooden-table_960x.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+    filter: blur(4px);
+    z-index:-1;
+
+}
+
+.nav-container,.freshcoffee{
+    position:relative;
+    z-index:2;
+}
+
+
+.nav-container {
+    background: transparent;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-size: 100px;
+    border: 2px solid white;
+    padding: 0.5em;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    color: transparent;
+
+}
+
+.menu li {
+    padding: 0 5em;
+}
+
+.menu a {
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.freshcoffee {
+    padding: 10%;
+}
+
+.freshcoffee h1 {
+    font-size: 10em;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+.freshcoffee p {
+    margin-bottom: 1em;
+    font-size: 3em;
+    line-height: 1.5;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 3.5em;
+    cursor: pointer;
+  
+}
+
+
+/* Feature section styles */
+.feature {
+    padding: 2em;
+    background-color: white;
+    text-align: center;
+}
+
+/* Opening hours styles */
+.opening-hours {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    padding: 50px;
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    /* semi-transparent black overlay */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.hours {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.day {
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+
+.welcome{
+    background-color:lightpink;
+    text-align:center;
+}
+.welcoming{
+    color:white;
+    position:absolute;
+    right:20%;
+    top:95%;
+    size:100px;
+}
+.welcome p{
+    color:white;
+    size:80px;
+    position:absolute;
+    right:20%;
+    top:100%;
+}
+
+.view{
+    position:absolute;
+    right:20%;
+    top:110%;
+
+}
+.img{
+position:relative;
+}
+.view a{
+    color:white;
+}
