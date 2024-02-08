@@ -97,7 +97,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('../assets/images/coffee\ beans2.jpg') no-repeat center center fixed; /* Image path */
+    background: url('../assets/images/page2-2.png') no-repeat center center fixed; /* Image path */
     background-size: cover; /* Background image size */
     background-attachment: fixed; /* Fixed background image */
     opacity: 0.7; /* Adjust opacity */
@@ -198,4 +198,8 @@ p {
 .footer a {
     color: #fff;
     text-decoration: none;
+}
+
+.footer a .current {
+    color: lightskyblue;
 }

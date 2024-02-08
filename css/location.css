@@ -153,3 +153,7 @@ p {
     color: #fff;
     text-decoration: none;
 }
+
+.footer a .current {
+    color: lightskyblue;
+}
