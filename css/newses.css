@@ -31,10 +31,12 @@
 }
 /* Container for the entire contact form */
 .contact-container {
-    display:flex;
-    justify-content:right;
-    top:200px;
-}
+        position: absolute; 
+        top:25%; /* 페이지의 상단에 위치 */
+        left:40%; 
+        width: 100%; 
+        z-index: 9999; 
+    }
 
 /* Styling for the form and form elements */
 #contact-form {
@@ -73,4 +75,3 @@
     background-color: #555; /* Lighten the button when hovering */
 }
 
-/* ... (Your existing CSS styles) ... */
