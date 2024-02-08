@@ -31,14 +31,14 @@
 }
 /* Container for the entire contact form */
 .contact-container {
-    display: flex;
-    justify-content: flex-end; /* Align the form to the right */
-    margin-right: 50px; /* Adjust as needed */
+    display:flex;
+    justify-content:right;
+    top:200px;
 }
 
 /* Styling for the form and form elements */
 #contact-form {
-    width: 400px; /* Adjust the width as necessary */
+    width: 800px; /* Adjust the width as necessary */
 }
 
 .input-group {

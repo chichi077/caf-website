@@ -92,9 +92,18 @@ button {
     color: white;
     border: none;
     padding: 1em 2em;
-    font-size: 3.5em;
+    width:100px;
+    height:35px;
     cursor: pointer;
-  
+     text-align:center;
+    font-size:10px;
+
+}
+
+.btn{
+    position:absolute;
+    top:750px;
+    right: 350px;
 }
 
 .cfimg{
@@ -179,6 +188,8 @@ h2 {
 
 
 .view{
+    width:5px;
+    height:5px;
     position:absolute;
     right:20%;
     top:110%;
