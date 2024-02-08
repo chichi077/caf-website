@@ -49,22 +49,22 @@ body {
 }
 
 /* Main section */
-#main {
+.main {
     text-align: center;
     margin-top: 20px;
     position: relative;
 }
 
-#main h2 {
+.main h2 {
     font-size: 32px;
-    color: brown;
+    color: white;
     position: absolute;
-    top: 50%; /* 調整垂直方向上的位置 */
-    left: 20%; /* 調整水平方向上的位置 */
+    top: 50%; /* Adjust the vertical position */
+    left: 50%; /* Adjust the horizontal position */
     transform: translate(-50%, -50%);
 }
 
-#main img {
+.main img {
     width: 100%;
     height: auto;
 }
@@ -86,7 +86,7 @@ body {
     margin: 10px;
     text-align: center;
     position: relative;
-    overflow: hidden; /* 添加溢出隱藏，以便背景不會溢出到圖片之外 */
+    overflow: hidden; /* Add overflow hidden to prevent the background from overflowing the image */
 }
 
 .container .product .product-info:before {
@@ -97,18 +97,18 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('../assets/images/coffee\ beans2.jpg') no-repeat center center fixed; /* 圖片的路徑 */
-    background-size: cover; /* 背景圖片大小的規模 */
-    background-attachment: fixed; /* 將背景圖片固定不動 */
-    opacity: 0.7; /* 適應透明度 */
-    z-index: -1; /* 將背景圖片置於 z-index -1，以使其處於內容之後 */
+    background: url('../assets/images/page2-2.png') no-repeat center center fixed; /* Image path */
+    background-size: cover; /* Background image size */
+    background-attachment: fixed; /* Fixed background image */
+    opacity: 0.7; /* Adjust opacity */
+    z-index: -1; /* Set background image to z-index -1 to position it behind the content */
 }
 
 .container .product .product-info .image {
     width: 100%;
     height: auto;
     border-radius: 50%;
-    z-index: 1; /* 將圖片置於 z-index 1，以使其處於背景之前 */
+    z-index: 1; /* Set image to z-index 1 to position it in front of the background */
 }
 
 .container .product .product-info h4 {
@@ -123,17 +123,54 @@ body {
     margin-top: 5px;
 }
 
-/* Footer section */
+/* Footer section*/
 .footer {
-    background-color: #333;
+    position: relative;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
+    height: 400px;
+    padding: 0px 40px 0px 40px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/footer\ photo.png') center/cover no-repeat;
+    z-index: -1;
 }
 
 .footer .footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    /* Adjust the value here based on the distance to be moved */
+    width: 90%;
+    /* Use a percentage to ensure it does not exceed the width of .footer */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer .footer-section {
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /* Adjust the value as needed */
+}
+
+.footer-img img {
+    width: 239px;
+    height: 155px;
+    position: absolute;
+    left: 15%;
+    transform: translate(-50%, 90%);
 }
 
 .footer .footer-section ul {
@@ -145,7 +182,17 @@ body {
 }
 
 .footer .footer-bottom {
-    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Use a percentage to ensure width takes up the entire .footer */
+    padding: 20px;
+    /* Adjust the bottom margin as needed */
+}
+
+.footer h3,
+p {
+    text-align: center;
 }
 
 .footer a {
@@ -153,26 +200,6 @@ body {
     text-decoration: none;
 }
 
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-container nav {
-        margin-top: 10px;
-    }
-
-    .nav-container ul {
-        flex-direction: column;
-    }
-
-    #main h2 {
-        font-size: 24px;
-    }
-
-    .container .product .product-info {
-        width: calc(50% - 20px);
-    }
+.footer a .current {
+    color: lightskyblue;
 }
