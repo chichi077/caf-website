@@ -1,5 +1,34 @@
-/* ... (Your existing CSS styles) ... */
+/* Navigation section */
+.nav-container {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.nav-container .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-container nav {
+    display: flex;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-container li {
+    margin-right: 20px;
+}
+
+.nav-container a {
+    color: #fff;
+    text-decoration: none;
+}
 /* Container for the entire contact form */
 .contact-container {
     display: flex;
