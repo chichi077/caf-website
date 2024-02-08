@@ -1,5 +1,6 @@
 * {
-
+    margin:0;
+    padding:0;
     box-sizing: border-box;
 }
 
@@ -9,6 +10,9 @@ header {
     color: white;
     overflow: hidden;
 }
+.freshcoffee {
+    font-size:3px;
+}
 
 header::before {
     content: '';
@@ -17,7 +21,7 @@ header::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url(./Cuban-coffee-cup-on-wooden-table_960x.webp);
+    background-image: url(../Cuban-coffee-cup-on-wooden-table_960x.webp);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: left;
@@ -34,15 +38,16 @@ header::before {
 
 .nav-container {
     background: transparent;
-    padding: 1em;
-    display: flex;
+    padding: 2em;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     color: white;
+    font-size:0.5px;
 }
 
 .logo {
-    font-size: 100px;
+    font-size: 20px;
     border: 2px solid white;
     padding: 0.5em;
 }
@@ -51,15 +56,16 @@ header::before {
     list-style: none;
     display: flex;
     color: transparent;
+    size: 50px;
 
 }
 
 .menu li {
-    padding: 0 5em;
+    padding: 0 30em;
 }
 
 .menu a {
-    font-size: 50px;
+    font-size: 12px;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -86,9 +92,26 @@ button {
     color: white;
     border: none;
     padding: 1em 2em;
-    font-size: 3.5em;
+    width:100px;
+    height:35px;
     cursor: pointer;
-  
+     text-align:center;
+    font-size:10px;
+
+}
+
+.btn{
+    position:absolute;
+    top:750px;
+    right: 350px;
+}
+
+.cfimg{
+    width:300px;
+    border-radius:70%;
+    position:relative;
+    left:-150px;
+    top:30px;
 }
 
 
@@ -98,6 +121,27 @@ button {
     background-color: white;
     text-align: center;
 }
+.welcome{
+    background-color:lightpink;
+    text-align:center;
+   
+}
+.welcoming{
+    color:white;
+    position:absolute;
+    right:20%;
+    top:95%;
+    size:100px;
+}
+
+.welcome p{
+    color:black;
+    size:10px;
+    position:relative;
+    left:200px;
+    top:-80px;
+}
+
 
 /* Opening hours styles */
 .opening-hours {
@@ -109,7 +153,7 @@ button {
     align-items: center;
     justify-content: center;
     position: relative;
-    color: white;
+    color: black;
     padding: 50px;
 }
 
@@ -142,26 +186,10 @@ h2 {
     left: 50%;
 }
 
-.welcome{
-    background-color:lightpink;
-    text-align:center;
-}
-.welcoming{
-    color:white;
-    position:absolute;
-    right:20%;
-    top:95%;
-    size:100px;
-}
-.welcome p{
-    color:white;
-    size:80px;
-    position:absolute;
-    right:20%;
-    top:100%;
-}
 
 .view{
+    width:5px;
+    height:5px;
     position:absolute;
     right:20%;
     top:110%;
@@ -175,8 +203,7 @@ position:relative;
 }
 
 /*Evelyn*/
-/* 修改後的 CSS 樣式 */
-/* Reset some default styles */
+
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;

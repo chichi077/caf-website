@@ -1,0 +1,76 @@
+/* Navigation section */
+.nav-container {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-container nav {
+    display: flex;
+}
+
+.nav-container ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-container li {
+    margin-right: 20px;
+}
+
+.nav-container a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Container for the entire contact form */
+.contact-container {
+    display:flex;
+    justify-content:right;
+    top:200px;
+}
+
+/* Styling for the form and form elements */
+#contact-form {
+    width: 800px; /* Adjust the width as necessary */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Space between input groups */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.input-group input[type="submit"] {
+    background-color: #333; /* Dark background for the submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-group input[type="submit"]:hover {
+    background-color: #555; /* Lighten the button when hovering */
+}
+
+/* ... (Your existing CSS styles) ... */
