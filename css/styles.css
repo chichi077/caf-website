@@ -205,104 +205,124 @@ position:relative;
 
 /*Evelyn*/
 
-body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-}
-
-/* Global styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 /* Our menu section */
-.our-menu-page {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.menu-title {
-    font-size: 28px;
-    color: #333;
-}
-
-/* Homepage column item */
-.homepage-colum-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    display: flex; /* 使用 Flexbox 進行排列 */
-}
-
-.homepage-colum-img {
-    flex: 1;
-}
-
-/* 修改圖片樣式 */
-.coffee-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-.homepage-colum-detail {
-    flex: 1;
-    padding: 20px;
-}
-
-.homepage-colum-detail-title {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.homepage-colum-detail p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-
-/* customer page styles.css */
-
-.reviews-container {
-    max-width: 100%;
-  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.our-menu {
     position: relative;
 }
 
-.reviews-container::before {
+.our-menu::before {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: url('../assets/images/page1-4.png') center/cover no-repeat; /* 請替換為實際的背景圖片路徑 */
+    background: url('../assets/images/page1-4.png') center/cover no-repeat;
     z-index: -1;
+}
+
+.our-menu h1 {
+    font-size: 28px;
+    color: #903711;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.our-menu h2 {
+    font-size: 18px;
+    color: #9E5A3D;
+    text-align: left;
+    border-bottom: 2px solid #9E5A3D;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('../assets/images/page1-4.png') center/cover no-repeat;
+    z-index: -1;
+}
+
+.product-item {
+    width: calc(25% - 20px);
+    background-color: #734A39;
+    color: #fff;
+    border: 1px solid #654321;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.price-and-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.order-btn {
+    background-color: #CD853F;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+/* customer page styles.css */
+
+.reviews-container {
+    max-width: 600px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    background: url('../assets/images/page1-5.png') center/cover no-repeat; /* 請替換為實際的背景圖片路徑 */
+    background-size: 100%; 
 }
 
 .review {
     width: calc(33.33% - 20px);
-    border: 1px solid #ccc;
+    background-color: 1px solid #583115; /* 修改評論框顏色為 #583115 */
     border-radius: 8px;
     padding: 15px;
     margin-bottom: 20px;
     box-sizing: border-box;
     position: relative;
 }
+
 .user-info {
     display: flex;
     flex-direction: column;
@@ -348,6 +368,7 @@ body {
     color: #333;
     font-size: 12px;
 }
+
 
 
 /* Footer section*/
