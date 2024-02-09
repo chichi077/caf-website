@@ -6,7 +6,7 @@ body, h1, h2, ul, li, p {
   
   body {
     font-family: 'Arial', sans-serif;
-    background: bisque;
+    background: lavender;
     color: #333;
     line-height: 1.6;
   }
@@ -48,6 +48,7 @@ body, h1, h2, ul, li, p {
   .columns {
     display: flex;
     justify-content: space-between;
+    border-top: 3px solid;
   }
   
   .column {
@@ -66,6 +67,7 @@ body, h1, h2, ul, li, p {
   
   .column ul {
     text-align: left;
+    border-top: 3px dashed;
   }
   
   .column li {
@@ -83,40 +85,91 @@ body, h1, h2, ul, li, p {
     position: absolute;
     top: 400px;
     right:100px;
+    clip-path:circle(40%);
   }
   .image img {
     width: 100%;
-    max-width: 400px; /* Adjust as needed */
+    max-width: 400px; 
     margin: 0 auto;
     display: block;
   }
   
-  /* Footer Styles */
   .footer {
-    background: #f4f4f4;
-    padding: 2rem;
+    position: relative;
+    color: #fff;
     text-align: center;
-  }
-  
-  .footer-container {
+    height: 400px;
+    padding: 0px 40px 0px 40px;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../assets/images/footer\ photo.png') center/cover no-repeat;
+    z-index: -1;
+}
+
+.footer .footer-container {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    /* Adjust the value here based on the distance to be moved */
+    width: 90%;
+    /* Use a percentage to ensure it does not exceed the width of .footer */
+    height: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-  }
-  
-  .footer-section h3 {
-    margin-bottom: 1rem;
-  }
-  
-  .footer-section ul,
-  .footer-section p {
-    text-align: left;
-  }
-  
-  .footer-bottom {
-    margin-top: 2rem;
-    font-size: 0.8rem;
-  }
-  
- 
-  
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer .footer-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /* Adjust the value as needed */
+}
+
+.footer-img img {
+    width: 239px;
+    height: 155px;
+    position: absolute;
+    left: 15%;
+    transform: translate(-50%, 90%);
+}
+
+.footer .footer-section ul {
+    list-style-type: none;
+}
+
+.footer .footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Use a percentage to ensure width takes up the entire .footer */
+    padding: 20px;
+    /* Adjust the bottom margin as needed */
+}
+
+.footer h3,
+p {
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a .current {
+    color: lightskyblue;
+}
