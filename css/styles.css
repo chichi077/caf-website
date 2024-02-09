@@ -1,9 +1,6 @@
 * {
     margin:0;
-    padding:0;
-    box-sizing: border-box;
-    
-}
+    padding:0;}
 
 header {
     position: relative;
@@ -103,8 +100,8 @@ button {
 
 .btn{
     position:absolute;
-    top:750px;
-    right: 350px;
+    top:650px;
+    right: 250px;
 }
 
 .cfimg{
@@ -136,7 +133,7 @@ button {
 }
 
 .welcome p{
-    color:black;
+    color:rgba(0, 0, 0, 0.3)
     size:10px;
     position:relative;
     left:200px;
@@ -146,16 +143,15 @@ button {
 
 /* Opening hours styles */
 .opening-hours {
-
     background-position: center;
     height: 200px;
-    /* Adjust as needed */
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     color: rgba(0, 0, 0, 0.5);
-    padding: 50px;
+  
 }
 
 .overlay {
@@ -167,7 +163,8 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 10%;
+    color:white;
+    font-size:20px;
 }
 
 .hours {
@@ -178,6 +175,8 @@ button {
 
 .day {
     text-align: center;
+    color:white;
+    font-size:20px;
 }
 
 h2 {
@@ -218,8 +217,7 @@ body {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    
 }
 
 /* Our menu section */
